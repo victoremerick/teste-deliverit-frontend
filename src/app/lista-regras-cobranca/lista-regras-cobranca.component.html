@@ -1,0 +1,21 @@
+<div class="block">
+  <h2>Lista de Regras de Cobrança</h2>
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Operador</th>
+      <th>Limite de Dias</th>
+      <th>Multa (%)</th>
+      <th>Taxa ao Dia (%)</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let regra of regrasCobranca">
+      <td>{{ regra.operador }}</td>
+      <td>{{ regra.limiteDias }}</td>
+      <td>{{ regra.multa }}</td>
+      <td>{{ regra.taxaAoDia }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

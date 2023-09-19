@@ -1,0 +1,29 @@
+<form (submit)="criarRegraCobranca()" class="block">
+
+  <h2>Criar Regra de Cobrança</h2>
+
+  <div class="form-group">
+    <label for="operador">Operador:</label>
+    <select id="operador" class="form-control" [(ngModel)]="novaRegraCobranca.operador" name="operador">
+      <option value="MAIOR">Maior</option>
+      <option value="MENOR">Menor</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="limiteDias">Limite de Dias:</label>
+    <input type="number" id="limiteDias" class="form-control" [(ngModel)]="novaRegraCobranca.limiteDias" name="limiteDias">
+  </div>
+
+  <div class="form-group">
+    <label for="multa">Multa (%):</label>
+    <input type="number" id="multa" class="form-control" [(ngModel)]="novaRegraCobranca.multa" name="multa">
+  </div>
+
+  <div class="form-group">
+    <label for="taxaAoDia">Taxa ao Dia (%):</label>
+    <input type="number" id="taxaAoDia" class="form-control" [(ngModel)]="novaRegraCobranca.taxaAoDia" name="taxaAoDia">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Criar Regra de Cobrança</button>
+</form>

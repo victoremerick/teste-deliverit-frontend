@@ -1,0 +1,23 @@
+<div class="block">
+  <h2>Lista de Contas a Pagar <button (click)="carregarContasAPagar()">Atualizar</button></h2>
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Valor Original</th>
+      <th>Valor Corrigido</th>
+      <th>Dias em Atraso</th>
+      <th>Data de Pagamento</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let conta of contasAPagar">
+      <td>{{ conta.nome }}</td>
+      <td>{{ conta.valorOriginal }}</td>
+      <td>{{ conta.valorCorrigido }}</td>
+      <td>{{ conta.diasEmAtraso }}</td>
+      <td>{{ conta.dataPagamento }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
